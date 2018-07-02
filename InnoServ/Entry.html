@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Course Query</title>
+<script src="entryjs.js"></script>
+<link rel="stylesheet" type="text/css" href="entrycss.css">
+</head>
+
+<body>
+
+<div class = "wrapper">
+	
+<div id = "header">
+
+	<p id = "welcome">
+		Welcome to the Course Database!
+	</p>
+
+	<div id = "header_login">
+
+		<p id>
+			<a href = "#">Login</a>
+		</p>
+	</div>
+
+</div>
+
+<!-- ==========Border(header&midtop)==========  -->
+
+<div id = "midtop">
+
+	<div id = "firstQ">
+	
+	<p id = "midtop_title">
+	Select Year and Semester:
+	</p>
+
+	<form method = "GET" id = "top_search">
+	<table id = "top">
+		<tr><!-- First Row -->
+			<td>
+				By Year and Semester
+			</td>
+			<td>
+				<select name = "year" form = "top_search" id = "year">
+					<option value="0">Select Year</option>
+					<option value="107">107</option>
+    				<option value="106">106</option>
+    				<option value="105">105</option>
+    				<option value="104">104</option>
+				</select>
+			</td>
+			<td>
+				<select name = "semester" form = "top_search" id = "semester">
+					<option value="0">Select Semester</option>
+					<option value="1">Spring</option>
+    				<option value="2">Fall</option>
+				</select>
+			</td>
+		</tr>
+	</table>	
+	
+	<p id = "midtop_title">
+	<br>
+	Find Courses By Selection:
+	</p>
+
+	<table id = "top">
+		<tr><!-- First Row -->
+			<td>
+				By College
+			</td>
+			<td>
+				<select  onchange = "collegechange(this)" name = "college" form = "top_search" id = "college">
+					<option value="0">Select College</option>
+					<option value="1">Management</option>
+    				<option value="2">Engineering</option>
+    				<option value="3">Language Center</option>
+    				<option value="4">General</option>
+				</select>
+			</td>
+		</tr>
+		<tr><!-- Second Row -->
+			<td>
+				By Department/Institute
+			</td>
+			<td>
+				<select  name = "department" form = "top_search" id = "department">
+				</select>
+			</td>
+		</tr>
+		<tr><!-- Third Row -->
+			<td>
+				By Genre
+			</td>
+			<td>
+				<select  name = "genre" form = "top_search" id = "genre">
+					<option value="compulsory">Compulsory</option>
+    				<option value="elective">Elective</option>
+				</select>   
+			</td>
+		</tr>
+	</table>
+	</form>
+
+
+	<p class = "sub"><!-- Submit Button -->
+		<br>
+		<input type="submit" align = "middle" form="top_search" />
+	</p>
+
+
+	<p id = "midtop_title">
+	<br>
+	Find Courses By Input:
+	</p>
+
+
+<form method = "GET" id = "mid_search">
+	<table id = "mid">
+		<tr><!-- First Row -->
+			<td>
+				By Course Code
+			</td>
+			<td>
+				<input name = "coursecode" type="text" form = "mid_search">
+			</td>
+		</tr>
+		<tr><!-- Second Row -->
+			<td>
+				By Instructor
+			</td>
+			<td>
+				<input name = "instructor" type="text" form = "mid_search">
+			</td>
+		</tr>
+		<tr><!-- Third Row -->
+   			<td>
+   				By Course Name
+   			</td>
+   			<td>
+				<input name = "coursename" type="text" form = "mid_search">
+    		</td> 
+  		</tr>
+	</table>
+	</form>
+
+
+	<p class = "sub">
+		<br>
+		<input type="submit" align = "middle" form="mid_search" />
+	</p>
+
+	</div>
+
+	
+</div><!-- Mid Top -->
+
+</div><!-- Wrapper -->
+
+<!-- ==========Border(wrapper)==========  -->
+
+
+
+</body>
+</html>
