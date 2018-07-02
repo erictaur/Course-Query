@@ -32,7 +32,9 @@
 	<div id = "firstQ">
 	
 	<p id = "midtop_title">
-	Select Year and Semester:
+	<br>
+	Find Courses By Selection:
+	<br>
 	</p>
 
 	<form method = "GET" id = "top_search">
@@ -60,10 +62,7 @@
 		</tr>
 	</table>	
 	
-	<p id = "midtop_title">
-	<br>
-	Find Courses By Selection:
-	</p>
+	<p><br><br></p>
 
 	<table id = "top">
 		<tr><!-- First Row -->
@@ -100,6 +99,19 @@
 				</select>   
 			</td>
 		</tr>
+		<tr><!-- Fourth Row -->
+			<td>
+				By Grade
+			</td>
+			<td>
+				<select  name = "grade" form = "top_search" id = "grade">
+					<option value="1">1</option>
+    				<option value="2">2</option>
+    				<option value="3">3</option>
+    				<option value="4">4</option>
+				</select>   
+			</td>
+		</tr>
 	</table>
 	</form>
 
@@ -117,6 +129,33 @@
 
 
 <form method = "GET" id = "mid_search">
+
+	<table id = "top">
+		<tr><!-- First Row -->
+			<td>
+				By Year and Semester
+			</td>
+			<td>
+				<select name = "year" form = "mid_search" id = "year">
+					<option value="0">Select Year</option>
+					<option value="107">107</option>
+    				<option value="106">106</option>
+    				<option value="105">105</option>
+    				<option value="104">104</option>
+				</select>
+			</td>
+			<td>
+				<select name = "semester" form = "mid_search" id = "semester">
+					<option value="0">Select Semester</option>
+					<option value="1">Spring</option>
+    				<option value="2">Fall</option>
+				</select>
+			</td>
+		</tr>
+	</table>	
+
+	<p><br><br></p>
+
 	<table id = "mid">
 		<tr><!-- First Row -->
 			<td>
