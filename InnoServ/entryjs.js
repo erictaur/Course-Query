@@ -5,16 +5,17 @@ var s4 = ["G1", "G2", "G3"]
 var x = [s1, s2, s3, s4];
 
 function collegechange(s) {
-  var department = document.getElementById("department");
+  //var department = document.getElementById("department");
   if (s.value > 0) {
     
     var v = "";
     for (var i = 0; i < x[s.value - 1].length; i++) {
       v += "<option value='" + x[s.value - 1][i] + "'>" + x[s.value - 1][i] + "</option>"
     }
-    department.innerHTML = v;
+	console.log(v);
+	$("#department").html(v);
   } else {
-    department.innerHTML = "<option>" + "Select College First" + "</option>";
+	$("#department").html("<option>Select College First</option>");
     }
 }
 
