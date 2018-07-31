@@ -1,0 +1,35 @@
+header {
+    position: relative;
+    background-color: grey;
+    height: 30%;
+    width: 100%;
+}
+
+#welcome {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+#login {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 80%;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+	color: black;
+}
+
+
+a:hover, a:active {
+    text-decoration: underline;
+	color: black;
+}

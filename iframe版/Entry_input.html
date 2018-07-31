@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Course Query</title>
+<base target="_self">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="entryjs.js"></script>
+<link rel="stylesheet" type="text/css" href="css/html_body.css">
+<link rel="stylesheet" type="text/css" href="css/Entry_iframe.css">
+</head>
+
+<body>
+
+	<p class="midtop_title">
+		<br>
+		<a href = "Entry_selection.html">Selection</a> / 
+		<a href = "Entry_input.html">Input</a>
+		<br><br>
+		Find Courses By Input:
+	</p>
+
+
+
+
+<form>
+	<table class="search_table">
+		<tr><!-- First Row -->
+			<td>
+				By Year and Semester
+			</td>
+			<td>
+				<select name = "year" form = "mid_search" id = "year">
+					<option value="0">Select Year</option>
+					<option value="107">107</option>
+    				<option value="106">106</option>
+    				<option value="105">105</option>
+    				<option value="104">104</option>
+				</select>
+			</td>
+			<td>
+				<select name = "semester" form = "mid_search" id = "semester">
+					<option value="0">Select Semester</option>
+					<option value="1">Spring</option>
+    				<option value="2">Fall</option>
+				</select>
+			</td>
+		</tr>
+	</table>	
+	<p><br><br></p>
+
+	<table class="search_table">
+		<tr><!-- First Row -->
+			<td>
+				By Course Code
+			</td>
+			<td>
+				<input name = "coursecode" type="text" form = "mid_search">
+			</td>
+		</tr>
+		<tr><!-- Second Row -->
+			<td>
+				By Instructor
+			</td>
+			<td>
+				<input name = "instructor" type="text" form = "mid_search">
+			</td>
+		</tr>
+		<tr><!-- Third Row -->
+   			<td>
+   				By Course Name
+   			</td>
+   			<td>
+				<input name = "coursename" type="text" form = "mid_search">
+    		</td> 
+  		</tr>
+	</table>
+</form>
+
+
+
+	<br><br><br><br><br>
+	<input type="submit" align = "middle" form="top_search" />
+
+
+</body>
+</html>
