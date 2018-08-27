@@ -22,7 +22,7 @@
 		<a href = "../login/login.php">Login</a>
 	</p>
 	<p id="refresh">
-		<a href = "file_generate.php">Reload</a>
+		<a href = "file_generate.php">Reset</a>
 	</p>
 </header>
 

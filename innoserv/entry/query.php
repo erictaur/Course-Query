@@ -15,7 +15,11 @@
 
 	
 
-	$query = "SELECT * FROM course"; 
+	$query = "SELECT * FROM course
+              WHERE (year = '$q_year'
+              AND semester ='$q_semester')
+              AND crs_id = '$q_coursecode'
+              "; 
 
 	$results = mysqli_query($conn, $query);
 	

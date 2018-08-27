@@ -42,8 +42,8 @@
 			<td>
 				<select name = 'semester' id = 'semester'>
 					<option value='0'>Select Semester</option>
-					<option value='1'>Spring</option>
-    				<option value='2'>Fall</option>
+					<option value='Spring'>Spring</option>
+    				<option value='Fall'>Fall</option>
 				</select>
 			</td>
 		</tr>

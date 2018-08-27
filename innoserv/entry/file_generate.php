@@ -62,7 +62,9 @@ $str2 = mysqli_query($str4, $str1);
 		}
 	}
 	?>
-	
+	<tr class='output_row'>
+		<td colspan='12'><a href='query.php'><input type='button' value='Back'></td>
+	</tr>
 </table>
 
 <?php
