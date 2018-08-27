@@ -24,14 +24,13 @@
     <table id="output_table">
     <?php
 
-    include ('file_generate.php');
+    //include ('file_generate.php');
 
 	if($results->num_rows > 0){
 		while($row = mysqli_fetch_row($results)){?>
 
             <?php
             $postinfo='/'.$row[10]."_".$row[9]."_".$row[0];
-            file_gen($postinfo);
             ?>
 
             <tr class='output_row'>
