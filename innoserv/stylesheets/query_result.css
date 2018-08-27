@@ -1,0 +1,22 @@
+#output_table
+{
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 20px;
+}
+
+td{
+	width: 70px;
+}
+
+#c1{
+	width: 200px;
+}
+
+#c2, #c6{
+	width: 220px;
+}
+
+.output_row{
+	text-align: center;
+}
