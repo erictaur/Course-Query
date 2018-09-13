@@ -1,7 +1,7 @@
 <?php
 	$host = "localhost";
 	$username = "root";
-	$password = "kartg0041711";
+	$password = "********";
 	$dbname = "innoserv";
 
 	$conn = mysqli_connect($host,$username,$password,$dbname);
