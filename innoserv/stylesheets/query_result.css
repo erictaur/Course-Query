@@ -1,0 +1,52 @@
+#output_table
+{
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 20px;
+}
+
+td{
+	width: 70px;
+}
+
+#c1{
+	width: 200px;
+}
+
+#c2, #c6{
+	width: 220px;
+}
+
+.output_row{
+	text-align: center;
+}
+
+input[type = submit]{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 20%;
+    left: 50%;
+    width: 10%;
+    background-color: #000000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#course_file_back{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 10%;
+    left: 50%;
+    width: 10%;
+    background-color: #000000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
