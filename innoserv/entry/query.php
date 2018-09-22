@@ -1,9 +1,10 @@
-<link rel="stylesheet" type="text/css" href="../stylesheets/html_body.css">
+link rel="stylesheet" type="text/css" href="../stylesheets/html_body.css">
 <link rel="stylesheet" type="text/css" href="../stylesheets/query_result.css">
 
 
 <?php
 	session_start();
+    error_reporting(0);
 
 	include ('dbconn.php');
 
@@ -13,7 +14,6 @@
 	$q_instructor = $_POST['instructor'];
 	$q_coursename = $_POST['coursename'];
 
-	
 
 	$query = "SELECT * FROM course
               WHERE (year = '$q_year'
@@ -50,7 +50,31 @@
     		<td><?php echo "$row[8]  "?></td>
     		<td><?php echo "$row[9]  "?></td>
     		<td><?php echo "$row[10]  "?></td>
-            <td><a href="course_files<?php echo $postinfo ?>.php"><input type="button" value="click"></td>
+            <td>
+            <form action='course_files<?php echo $postinfo ?>.php' method='post'>
+
+                <?php 
+                /*
+                This Block decides which parameters to send to next page 
+                so that we can go back to the query page without implementing AJAX
+                */
+                if(!empty($_POST['year']))
+                {echo "<input type='hidden' name='q_year' id='q_year' value='".$q_year."'/>";}
+       
+                if(!empty($_POST['semester']))
+                {echo "<input type='hidden' name='q_semester' id='q_semester' value='".$q_semester."'/>";}
+
+                if(!empty($_POST['coursecode']))
+                {echo "<input type='hidden' name='q_coursecode' id='q_coursecode' value='".$q_coursecode."'/>";}
+                if(!empty($_POST['instructor']))
+                {echo "<input type='hidden' name='q_instructor' id='q_instructor' value='".$q_instructor."'/>";}
+                if(!empty($_POST['coursename']))
+                {echo "<input type='hidden' name='q_coursename' id='q_coursename' value='".$q_coursename."'/>";}
+                ?>
+                <!-- This submit button sends the data implicitly-->
+                <input type='submit' name='click' id='click' value='click'/><br/>
+            </form>
+            </td>
 
     		</tr>
             <tr>
@@ -62,4 +86,3 @@
 		echo "No results were found.";
 	}?>
   </table>
-
